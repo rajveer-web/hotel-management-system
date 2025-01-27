@@ -1,8 +1,8 @@
 class hotelfarecal:
 
-    def __init__(self,rt='',s=0,p=0,r=0,t=0,a=1800,name='',address='',cindate='',coutdate='',rno=101):
+    def __init__(self,rt='',s=0,p=0,r=0,t=0,a=1800,name='',address='',cindate='',coutdate='',rno=1001):
 
-        print ("\n\n*****WELCOME TO HEWING HOTEL*****\n")
+        print ("\nWelcome TO Abstract Hotel\n")
 
         self.rt=rt
 
@@ -30,13 +30,13 @@ class hotelfarecal:
 
         print ("We have the following rooms for you:-")
 
-        print ("1.  type A---->rs 6000 PN\-")
+        print ("1.  type A---->$ 90 PN\-")
 
-        print ("2.  type B---->rs 5000 PN\-")
+        print ("2.  type B---->$ 80 PN\-")
 
-        print ("3.  type C---->rs 4000 PN\-")
+        print ("3.  type C---->$ 70 PN\-")
 
-        print ("4.  type D---->rs 3000 PN\-")
+        print ("4.  type D---->$ 60 PN\-")
 
         x=int(input("Enter Your Choice Please->"))
 
@@ -46,24 +46,24 @@ class hotelfarecal:
 
             print ("you have opted room type A")
 
-            self.s=6000*n
+            self.s=90*n
 
         elif (x==2):
 
             print ("you have opted room type B")
 
-            self.s=5000*n
+            self.s=80*n
 
         elif (x==3):
 
             print ("you have opted room type C")
 
-            self.s=4000*n
+            self.s=70*n
 
         elif (x==4):
             print ("you have opted room type D")
 
-            self.s=3000*n
+            self.s=60*n
 
         else:
 
@@ -73,9 +73,9 @@ class hotelfarecal:
 
     def restaurentbill(self):
 
-        print("*****RESTAURANT MENU*****")
+        print("RESTAURANT MENU###")
 
-        print("1.water----->Rs20","2.tea----->Rs10","3.breakfast combo--->Rs90","4.lunch---->Rs110","5.dinner--->Rs150","6.Exit")
+        print("1.water----->$5","2.tea----->$4","3.breakfast combo--->$50","4.lunch---->$ 80","5.dinner--->$80","6.Exit")
 
 
         while (1):
@@ -85,23 +85,23 @@ class hotelfarecal:
 
             if (c==1):
                 d=int(input("Enter the quantity:"))
-                self.r=self.r+20*d
+                self.r=self.r+5*d
 
             elif (c==2):
                  d=int(input("Enter the quantity:"))
-                 self.r=self.r+10*d
+                 self.r=self.r+4*d
 
             elif (c==3):
                  d=int(input("Enter the quantity:"))
-                 self.r=self.r+90*d
+                 self.r=self.r+50*d
 
             elif (c==4):
                  d=int(input("Enter the quantity:"))
-                 self.r=self.r+110*d
+                 self.r=self.r+80*d
 
             elif (c==5):
                  d=int(input("Enter the quantity:"))
-                 self.r=self.r+150*d
+                 self.r=self.r+80*d
 
             elif (c==6):
                 break;
@@ -111,9 +111,9 @@ class hotelfarecal:
         print ("Total food Cost=Rs",self.r,"\n")
 
     def	laundrybill(self):
-        print ("******LAUNDRY MENU*******")
+        print ("LAUNDRY MENU##")
 
-        print ("1.Shorts----->Rs3","2.Trousers----->Rs4","3.Shirt--->Rs5","4.Jeans---->Rs6","5.Girlsuit--->Rs8","6.Exit")
+        print ("1.Shorts----->$3","2.Trousers----->$4","3.Shirt--->$5","4.Jeans---->$6","5.Girlsuit--->$8","6.Exit")
 
         while (1):
             #brought to you by code-projects.org
@@ -149,9 +149,9 @@ class hotelfarecal:
         print ("Total Laundary Cost=Rs",self.t,"\n")
 
     def gamebill(self):
-        print ("******GAME MENU*******")
+        print ("GAME MENU##")
 
-        print ("1.Table tennis----->Rs60","2.Bowling----->Rs80","3.Snooker--->Rs70","4.Video games---->Rs90","5.Pool--->Rs50==6","6.Exit")
+        print ("1.Table tennis----->$60","2.Bowling----->$80","3.Snooker--->$70","4.Video games---->$90","5.Pool--->$50==6","6.Exit")
 
 
 
@@ -192,7 +192,7 @@ class hotelfarecal:
         print ("Total Game Bill=Rs",self.p,"\n")
 
     def display(self):
-        print ("******HOTEL BILL******")
+        print ("HOTEL BILL###")
         print ("Customer details:")
         print ("Customer name:",self.name)
         print ("Customer address:",self.address)
